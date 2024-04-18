@@ -39,3 +39,14 @@ print(s1 == s2 == s3)  # True
 # True
 
 # notes : all the objects are pointing to the same memory location.
+
+
+# In case we want to use like s = Singleton() instead of s = Singleton.getInstance()
+class Singleton2:
+    _instance = None
+    
+    # __new__ method is called before __init__ method
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Singleton2, cls).__new__(cls)
+        return cls._instance
