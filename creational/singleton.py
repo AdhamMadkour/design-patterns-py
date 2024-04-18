@@ -1,6 +1,10 @@
 # problem statement: Ensure a class has only one instance and provide a global point of access to it.
 # Example: Database connection, Logger, Configuration, Government system, etc.
 
+# what is the diffrence between both the below implementations?
+
+# Singleton1: using getInstance() method make it more clear that we are using a singleton class.
+# Singleton2: using __new__ method make it more pythonic way to implement singleton class.
 
 class Singleton:
     _instance = None
