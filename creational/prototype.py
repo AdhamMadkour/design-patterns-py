@@ -9,6 +9,12 @@ from abc import ABC, abstractmethod
 # Example: Clone a shape object, Clone a car object, Clone a person object, duplicate a shape in a drawing application, etc.
 
 
+#       prototype  <--- client use clone method
+#      /         \
+# concrete1   concrete2
+
+
+
 class Prototype(ABC):
     @abstractmethod
     def clone(self):
