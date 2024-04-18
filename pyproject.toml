@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "design-patterns-py"
+version = "0.1.0"
+description = "design patterns in python"
+authors = ["Adham Ahmed <adham2272001@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
